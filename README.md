@@ -1,1 +1,2 @@
-scraper python pour marchesonline.com (Utilise les requêtes HTTP et Playwrite) Tourne 24h/24 Sans erreur
+#mo_veille
+scraper python pour marchesonline.com (Utilise HTTP request et Playwrite pour extraire) Tourne 24h/24 Sans erreur
