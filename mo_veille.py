@@ -1,5 +1,6 @@
 """
 Veille marchesonline.com — Notifications Discord
+By N0tad
 """
 
 import requests, json, os, sys, time, gc, schedule
@@ -7,11 +8,11 @@ from playwright.sync_api import sync_playwright
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
-KEYWORDS        = "cloison,doublage,isolation,plafond,menuiserie"
+KEYWORDS        = "cloison,doublage,isolation,plafond,menuiserie" # A personnaliser
 BASE_URL        = "https://www.marchesonline.com"
 PAGE_URL        = f"{BASE_URL}/appels-offres/en-cours"
 POST_URL        = f"{BASE_URL}/form_post_to_session"
-DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1497255915923963985/2EWwVqM0yfD8rH6CG5LhdzD536XBdZIKlsFFF52KZTY0XNV5eGsKCgXKAhAYFxb08fNf"
+DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1497255915923963985/2EWwVqM0yfD8rH6CG5LhdzD536XBdZIKlsFFF52KZTY0XNV5eGsKCgXKAhAYFxb08fNf" # A personnaliser
 
 DIR         = os.path.dirname(os.path.abspath(__file__))
 FICHIER_VUS = os.path.join(DIR, "marchesonline_vus.json")
@@ -21,11 +22,11 @@ POST_BODY = (
     "id_ref_type_avis=1"
     f"&mots_cle={KEYWORDS}"
     "&id_ref_type_recherche=1"
-    "&id_ref_departement[]=36&id_ref_departement[]=57&id_ref_departement[]=38"
-    "&id_ref_departement[]=45&id_ref_departement[]=50&id_ref_departement[]=54"
-    "&id_ref_departement[]=73&id_ref_departement[]=86&id_ref_departement[]=80"
-    "&id_ref_departement[]=87&id_ref_region[]=52"
-    "&statut_avis[]=2&date_mise_en_ligne=TODAY&__posted=1"
+    "&id_ref_departement[]=36&id_ref_departement[]=57&id_ref_departement[]=38" # A personnaliser
+    "&id_ref_departement[]=45&id_ref_departement[]=50&id_ref_departement[]=54" # A personnaliser
+    "&id_ref_departement[]=73&id_ref_departement[]=86&id_ref_departement[]=80" # A personnaliser
+    "&id_ref_departement[]=87&id_ref_region[]=52" # A personnaliser
+    "&statut_avis[]=2&date_mise_en_ligne=TODAY&__posted=1" # A personnaliser
     "&data_post_session_name=recherche_avancee"
 )
 
