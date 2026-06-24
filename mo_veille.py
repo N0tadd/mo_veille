@@ -12,7 +12,7 @@ KEYWORDS        = "cloison,doublage,isolation,plafond,menuiserie" # A personnali
 BASE_URL        = "https://www.marchesonline.com"
 PAGE_URL        = f"{BASE_URL}/appels-offres/en-cours"
 POST_URL        = f"{BASE_URL}/form_post_to_session"
-DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1497255915923963985/2EWwVqM0yfD8rH6CG5LhdzD536XBdZIKlsFFF52KZTY0XNV5eGsKCgXKAhAYFxb08fNf" # A personnaliser
+DISCORD_WEBHOOK = "" # A personnaliser
 
 DIR         = os.path.dirname(os.path.abspath(__file__))
 FICHIER_VUS = os.path.join(DIR, "marchesonline_vus.json")
